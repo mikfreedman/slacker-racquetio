@@ -32,6 +32,7 @@ defmodule SlackerRacquetio.Mixfile do
       {:cowboy, "~> 1.0"},
       {:plug, "~> 1.0"},
       {:slacker, git: "https://github.com/mikfreedman/slacker.git"},
+      {:mock, "~> 0.1.1", only: :test}
     ]
   end
 end
