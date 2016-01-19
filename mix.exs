@@ -14,7 +14,7 @@ defmodule SlackerRacquetio.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :slacker],
+    [applications: [:logger, :slacker, :cowboy, :plug],
       mod: {SlackerRacquetio, []}]
   end
 
@@ -29,6 +29,8 @@ defmodule SlackerRacquetio.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
+      {:cowboy, "~> 1.0"},
+      {:plug, "~> 1.0"},
       {:slacker, git: "https://github.com/mikfreedman/slacker.git"},
     ]
   end

@@ -22,11 +22,12 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 ## Execution
 
 ```bash
-SLACK_API_TOKEN='slack-api-token' RACQUET_CLUB_ID=666 mix run --no halt
+PORT=8080 SLACK_API_TOKEN='slack-api-token' RACQUET_CLUB_ID=666 mix run --no halt
 ```
 
 | Variable        | Description                                                 |
 | ---             | ---                                                         |
+| PORT            | Port that the web server should listen to                   |
 | SLACK_API_TOKEN | Your bot's API token                                        |
 | RACQUET_CLUB_ID | The numerical ID of your club on <http://racquet.io/clubs>* |
 

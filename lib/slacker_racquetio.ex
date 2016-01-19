@@ -5,10 +5,12 @@ defmodule SlackerRacquetio do
   # for more information on OTP Applications
   def start(_type, _args) do
     import Supervisor.Spec, warn: false
+    {port, _} = Integer.parse(System.get_env("PORT"))
 
     children = [
       # Define workers and child supervisors to be supervised
       # worker(SlackerRacquetio.Worker, [arg1, arg2, arg3]),
+      worker(SlackerRacquetio.WebServer, [port, []]),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
