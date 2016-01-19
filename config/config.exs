@@ -33,5 +33,6 @@ config :slacker,
   command_prefix: ["racquetbot", "rb"],
   slack_api_token: System.get_env("SLACK_API_TOKEN"),
   parsers: [SlackerRacquetio.Parsers.Infix, Slacker.Parsers.Prefix],
-  commands: [ Slacker.Commands.Echo, Slacker.Commands.Ping ]
+  commands: [ Slacker.Commands.Echo, Slacker.Commands.Ping, SlackerRacquetio.Commands.Beat ],
   allow_direct_messages: true,
+  racquet_club_id: System.get_env("RACQUET_CLUB_ID")
