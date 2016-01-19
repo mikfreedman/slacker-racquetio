@@ -10,6 +10,6 @@
   "plug": {:hex, :plug, "1.1.0"},
   "ranch": {:hex, :ranch, "1.2.0"},
   "slack": {:hex, :slack, "0.4.0"},
-  "slacker": {:git, "https://github.com/mikfreedman/slacker.git", "e4c251d4826c53e19b45af6bc8e9718e0c0c7ef8", []},
+  "slacker": {:git, "https://github.com/mikfreedman/slacker.git", "3bc31ecc2d62e3168d9c3bbed9ebe747eb2fcf23", []},
   "ssl_verify_hostname": {:hex, :ssl_verify_hostname, "1.0.5"},
   "websocket_client": {:git, "https://github.com/jeremyong/websocket_client", "f6892c8b55004008ce2d52be7d98b156f3e34569", []}}

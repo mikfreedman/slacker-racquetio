@@ -34,3 +34,4 @@ config :slacker,
   slack_api_token: System.get_env("SLACK_API_TOKEN"),
   parsers: [SlackerRacquetio.Parsers.Infix, Slacker.Parsers.Prefix],
   commands: [ Slacker.Commands.Echo, Slacker.Commands.Ping ]
+  allow_direct_messages: true,
