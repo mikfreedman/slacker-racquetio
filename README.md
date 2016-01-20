@@ -2,27 +2,10 @@
 
 An slacker bot that posts to <racquet.io>
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add slacker_racquetio to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:slacker_racquetio, "~> 0.0.1"}]
-        end
-
-  2. Ensure slacker_racquetio is started before your application:
-
-        def application do
-          [applications: [:slacker_racquetio]]
-        end
-
-
 ## Execution
 
 ```bash
-PORT=8080 SLACK_API_TOKEN='slack-api-token' RACQUET_CLUB_ID=666 mix run --no halt
+PORT=8080 SLACK_API_TOKEN='slack-api-token' RACQUET_CLUB_ID=666 mix run --no-halt
 ```
 
 | Variable        | Description                                                 |
